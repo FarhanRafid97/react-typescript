@@ -13,6 +13,7 @@ const List: React.FC<iProps> = ({ people, setPeople, setInput }) => {
     const filtered = people.filter((person, index) => index !== indexData);
     setPeople(filtered);
   };
+  console.log(people);
 
   const updateData = (index: number) => {
     setInput({

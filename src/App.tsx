@@ -3,7 +3,9 @@ import logo from './logo.svg';
 import './App.css';
 import List from './components/List';
 import AddToList from './components/AddToList';
-
+import DataJson from './components/DataJson';
+import CompEnum from './components/CompEnum';
+import { Level } from './components/CompEnum';
 export interface isState {
   people: {
     id: number;
@@ -27,7 +29,9 @@ function App() {
 
   return (
     <div className="App">
-      <AddToList people={people} setPeople={setPeople} />
+      <CompEnum level={Level.ADMIN} />
+      {/* <AddToList people={people} setPeople={setPeople} />
+      <DataJson /> */}
     </div>
   );
 }
