@@ -6,6 +6,7 @@ import AddToList from './components/AddToList';
 import DataJson from './components/DataJson';
 import CompEnum from './components/CompEnum';
 import { Level } from './components/CompEnum';
+import BankComponents from './components/BankComponents';
 export interface isState {
   people: {
     id: number;
@@ -29,7 +30,7 @@ function App() {
 
   return (
     <div className="App">
-      <CompEnum level={Level.ADMIN} />
+      <BankComponents />
       {/* <AddToList people={people} setPeople={setPeople} />
       <DataJson /> */}
     </div>
